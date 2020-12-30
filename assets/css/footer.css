@@ -1,0 +1,15 @@
+/*Styles du footer en bas de page*/
+footer{
+    width:100%;
+    background-color: rgb(50,50,50);
+    color:white;
+    font-size: 0.8em;
+}
+
+@media screen and (min-width: 901px){
+    footer{
+        margin-left:15%;
+        border-left:3px solid white;
+    }
+}
+

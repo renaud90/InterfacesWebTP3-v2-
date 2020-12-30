@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Parc Evasion</title>
+    <link rel="stylesheet" href="./assets/css/navbar.css"/>
+    <link rel="stylesheet" href="assets/css/main-page-content.css"/>
+    <link rel="stylesheet" href="assets/css/footer.css"/>
+    <link rel="stylesheet" href="assets/css/general.css"/>
+</head>
+
+
+<body>
+    <header class="side-navbar tablet-navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./assets/images/logo.png"/>
+            </a>
+        </div>
+        <div class="menu">
+            <ul class="menu-list">
+                <li class="menu-item"><a href="Page1.html">Parc de la Jacques-Cartier</a></li>
+                <li class="menu-item"><a href="">Parc des Monts-Valins</a></li>
+                <li class="menu-item"><a href="">Parc du Mont-Mégantic</a></li>
+                <li class="menu-item"><a href="">Parc du Bic</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <header class="phone-navbar">
+        <div class="navbar-shrink">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/images/logo.png"/>
+                </a>
+            </div>
+            <div class="dropdown-button" onclick="Dropdown()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="menu" id="dropdown-menu">
+            <ul class="menu-list">
+                <li class="menu-item"><a href="Page1.html">Parc de la Jacques-Cartier</a></li>
+                <li class="menu-item"><a href="">Parc des Monts-Valin</a></li>
+                <li class="menu-item"><a href="">Parc du Mont-Mégantic</a></li>
+                <li class="menu-item"><a href="">Parc du Bic</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="content">
+        <div id="content-title">Découvrez les magnifiques parcs du Québec</div>
+        <div class="grid-wrapper">
+            <div id="content-photo-1" class="content-photo"><div class="content-photo-title">Parc national de la Jacques-Cartier</div></div>
+            <div id="content-photo-2" class="content-photo"><div class="content-photo-title">Parc national des Monts-Valin</div></div>
+            <div id="content-photo-3" class="content-photo"><div class="content-photo-title">Parc national du Mont-Mégantic</div></div>
+            <div id="content-photo-4" class="content-photo"><div class="content-photo-title">Parc national du Bic</div></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Pour plus d'informations sur nos parcs, veuillez visiter le site web de la <a target="_blank" href="https://www.sepaq.com/home/index.dot?language_id=2">SEPAQ</a></p>
+    </footer>
+
+    
+
+    <script>
+        function Dropdown() {
+            var element = document.getElementById('dropdown-menu');
+            element.classList.toggle('menu-visible');
+        }
+    </script>
+</body>
+
+
+
+</html>

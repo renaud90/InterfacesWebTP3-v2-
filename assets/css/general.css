@@ -1,0 +1,42 @@
+/*Configurations communes à toutes les pages du site web*/
+body{
+    margin:0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:599px){
+    .content{
+        margin-top: 100px;
+        padding:1%;
+        width:96%;
+        z-index:0;
+    }
+
+    #content-title{
+        font-size:1.2em;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:900px){
+    .content{
+        margin-top: 100px;
+        padding:1%;
+        width:96%;
+    }
+
+    #content-title{
+        font-size:1.5em;
+    }
+}
+
+@media screen and (min-width:901px){
+    .content{
+        
+        width:82%;
+        margin-left:15%;
+        padding:1%;
+    }
+}
