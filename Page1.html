@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/css/navbar.css"/>
     <link rel="stylesheet" href="assets/css/footer.css"/>
     <link rel="stylesheet" href="assets/css/general.css"/>
+    <link rel="stylesheet" href="assets/css/slide-button.css"/>
     <title>Parc National de la Jacques-Cartier</title>
     
 </head>
@@ -98,6 +99,13 @@
                         de jumelles, vous serez en mesure d'admirer la faune de plus près. Ours noirs, orignaux et lynx sont
                         d'ailleurs du paysage; apportez un bon zoom pour obtenir vos meilleurs clichés. Laissez-vous charmer par 
                         les nombreux castors et loutres qui habitent nos lacs.</p>
+
+                        <p>Ajouter à mes parcs favoris
+                            <div id="button-outside" onclick="Slide()">
+                                <div id="button-inside"></div>
+                            </div>
+                        </p>
+                        
 
                         
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d348403.8389527754!2d-71.5621823!3d46.9832007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc0a9364e153c8d%3A0x7d0ec7822e4ea4d6!2sParc%20national%20de%20la%20Jacques-Cartier!5e0!3m2!1sfr!2sca!4v1608070552155!5m2!1sfr!2sca" 
@@ -246,6 +254,10 @@
         function Dropdown() {
             var element = document.getElementById('dropdown-menu');
             element.classList.toggle('menu-visible');
+        }
+        function Slide() {
+            document.getElementById('button-outside').classList.toggle('button-outside-clicked');
+            document.getElementById('button-inside').classList.toggle('button-inside-clicked');
         }
     </script>
 </body>
