@@ -4,6 +4,10 @@
     to {transform:rotate(360deg);}
 }
 
+.grid-wrapper a {
+    display: bloc;
+}
+
 .content{
     animation-name: rotation;
     animation-duration:0.5s;
