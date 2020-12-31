@@ -52,7 +52,7 @@ iframe{
 }
 
 .page-titre{
-    background-image: url("Images/Photos/Les_loups1.jpg");
+    background-image: url("/assets/images/Photos/Les_loups1.jpg");
     filter: grayscale(40%);
     text-align: center;
     background-size: cover;
