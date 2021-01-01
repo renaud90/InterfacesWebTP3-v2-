@@ -93,7 +93,7 @@ iframe{
 table{
     width: 100%;
     border: 5px solid transparent;
-    border-image: url(./Images/feuille_bordure.png) 30 round;
+    border-image: url(/assets/images/feuille_bordure.png) 30 round;
 }
 
 table img{
@@ -139,35 +139,4 @@ table tr td:nth-child(2){
     font-weight: bold;
     font-size: 1.2em;
 }
-
-
-
-
-
-/* .page-titre-overlay{
-    position: relative;
-    left: 0px;
-    top: 0px;
-    background: rgba(50, 50, 50, 0.2);
-} */
-
-/* A mettre dans le fichier main-page-content.css*/
-/* .grid-wrapper-contenu1{
-    display: grid;
-    grid-template-columns: 75% 25%;
-} */
-
-
-
-
-
-/*A mettre dans le fichier navbar.css*/
-
-
-
-
-
-/*A mettre dans le fichier main.css*/
-
-
 
