@@ -73,6 +73,11 @@ iframe{
     filter: grayscale(40%);
 }
 
+.page-titre-photo4{
+    background-image: url("../images/Photos/Bic.jpg");
+    filter: grayscale(20%);
+}
+
 .content-photo-title-page{
     color:white;
     width: 100%;
@@ -109,17 +114,23 @@ table{
 
 .tableau1{
     border: 5px solid transparent;
-    border-image: url(../images/feuille_bordure.png) 30 round;
+    border-image: url("../images/feuille_bordure.png") 30 round;
 }
 
 .tableau2{
     border: 5px solid transparent;
-    border-image: url(../images/Photos/Vallee-fantomes.jpg) 30 round;
+    border-image: url("../images/Photos/Vallee-fantomes.jpg") 30 round;
 }
 
 .tableau3{
     border: 5px solid transparent;
-    border-image: url(../images/ciel-nuit.jpg) 30 stretch;
+    border-image: url("../images/ciel-nuit.jpg") 30 stretch;
+}
+
+.tableau4{
+    border: 5px solid transparent;
+    border-image: url("../images/vague.jpeg") 30 stretch;
+    filter: grayscale(50%);
 }
 
 table img{
