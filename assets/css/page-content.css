@@ -46,18 +46,31 @@ iframe{
 }
 
 .texte-image-titre{
-    font-size: 0.7em;
+    font-size: 0.5em;
     padding: 100px 20px 0px 20px;
 
 }
 
 .page-titre{
-    background-image: url("/assets/images/Photos/Les_loups1.jpg");
-    filter: grayscale(40%);
     text-align: center;
     background-size: cover;
     border: 0px;
+    font-size: 3em;
+}
 
+.page-titre-photo1{
+    background-image: url("../images/Photos/Les_loups1.jpg");
+    filter: grayscale(40%);
+}
+
+.page-titre-photo2{
+    background-image: url("../images/Photos/Vallee-fantomes.jpg");
+    filter: grayscale(5%);
+}
+
+.page-titre-photo3{
+    background-image: url("../images/Photos/Mont-Megantic.jpg");
+    filter: grayscale(40%);
 }
 
 .content-photo-title-page{
@@ -92,8 +105,21 @@ iframe{
 
 table{
     width: 100%;
+}
+
+.tableau1{
     border: 5px solid transparent;
-    border-image: url(/assets/images/feuille_bordure.png) 30 round;
+    border-image: url(../images/feuille_bordure.png) 30 round;
+}
+
+.tableau2{
+    border: 5px solid transparent;
+    border-image: url(../images/Photos/Vallee-fantomes.jpg) 30 round;
+}
+
+.tableau3{
+    border: 5px solid transparent;
+    border-image: url(../images/ciel-nuit.jpg) 30 stretch;
 }
 
 table img{
@@ -115,7 +141,7 @@ table tr:first-child{
 
 table ul li:last-child{
     list-style: none;
-    list-style-image: url(./Images/duree.png);
+    list-style-image: url(../images/duree.png);
     list-style-type: square;
     margin-left: 0px;
 
@@ -123,7 +149,7 @@ table ul li:last-child{
 
 table ul li:first-child{
     list-style: none;
-    list-style-image: url(./Images/distance.png);
+    list-style-image: url(../images/distance.png);
     list-style-type: square;
     margin-left: 0px;
 }
