@@ -173,6 +173,11 @@ table img{
     margin: auto;
 }
 
+table tr td p{
+    font-weight: normal;
+    font-size: 0.75em;
+}
+
 table td ol > li{
     font-weight: bold;
 }
@@ -205,9 +210,9 @@ td{
     border-bottom: 2px solid darkgray;
 }
 
-table tr td:nth-child(2){
+.header-tableau{
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .derniere-colonne{
