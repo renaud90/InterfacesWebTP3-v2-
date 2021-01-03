@@ -117,6 +117,31 @@ iframe{
 
 }
 
+.audio-commentaires{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas:
+    "texte citation"
+    "bouton citation";
+    margin-bottom: 30px;
+}
+
+.texte-boutton{
+    display: grid;
+    grid-area: texte;
+}
+
+.bouton{
+    display: grid;
+    grid-area: bouton;
+}
+
+.citation{
+    grid-area: citation;
+}
+
+
+
 table{
     width: 100%;
 }
