@@ -106,11 +106,12 @@
                          style="border: 1px dashed black;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
                         
-                    <p>Ajouter à mes parcs favoris
-                            <div id="button-outside" onclick="Slide()">
-                                <div id="button-inside"></div>
-                            </div>
-                        </p>
+                         <p> Pour entendre ce parc
+                            <audio id="audio" src="assets\audio\foret4.mp3">
+                                <div id="button-outside" onclick="Slide(); play()">
+                                    <div id="button-inside"></div>
+                                </div>
+                            </audio>
                     </div>
                     <div class="sous-titre1" id="randonnee">Randonnée</div>
                             <p>13 sentiers sont disponibles pour vous dégourdir les jambes. De niveau débutant à difficile, vous
@@ -123,9 +124,9 @@
                 <div class="tableau4">
                     <table>
                         <tr>
-                            <td></td>
-                            <td>Niveau</td>
+                            <td colspan="2">Niveaux</td>
                             <td>Sentiers</td>
+                            <td rowspan="4" class="derniere-colonne"></td>
                         </tr>
                         <tr>
                             <td>
@@ -217,6 +218,16 @@
                     </table>
                 </div>
             </div>
+
+            <div class="citation">
+                <blockquote>
+                    Parce que je suis originaire de Rimouski, je vais au parc du Bic à chaque fois que je visite la 
+                    ville. Nous allons y passer du temps de qualité en famille. 
+                </blockquote>
+                <div class="personne">
+                    Steve Lemieux - Montréal
+            </div>
+
         </div>
 
     
@@ -245,10 +256,20 @@
             var element = document.getElementById('dropdown-menu');
             element.classList.toggle('menu-visible');
         }
+        function play() {
+            var audio = document.getElementById("audio");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+                audio.currentTime = 0
+            }
+        }
         function Slide() {
             document.getElementById('button-outside').classList.toggle('button-outside-clicked');
             document.getElementById('button-inside').classList.toggle('button-inside-clicked');
         }
+
     </script>
 </body>
 </html>
