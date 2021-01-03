@@ -61,6 +61,11 @@
         <div class="content">
             <div id="content-title" class="page-titre page-titre-photo1 content-photo-title-page">Parc national de la
                 Jacques-Cartier
+
+
+
+
+
                 <div class="description-titre texte-image-titre">Situé à quelques minutes de la ville de Québec, le Parc
                     national de la Jacques-Cartier vous offre
                     une multitude d'activités qui sauront vous faire décrocher!</div>
@@ -75,6 +80,14 @@
                             title="Observation de la faune"></a>
                     <a href="#randonnee"><img src="assets/images/randonnee.jpg" alt="Randonnée" title="Randonnée"></a>
                 </div>
+
+                <p class="button">
+                    <audio id="audio" src="assets\audio\foret1.mp3">
+                        <div id="button-outside" onclick="Slide(); play()">
+                            <div id="button-inside"></div>
+                        </div>
+                    </audio>
+                </p>
             </div>
             <div class="grid-wrapper-contenu1">
                 <div class="content-page">
@@ -128,20 +141,18 @@
 
 
 
-                        <p> Pour entendre ce parc
+                        <!-- <p> Pour entendre ce parc
 
                             <audio id="audio" src="assets\audio\foret1.mp3">
                                 <div id="button-outside" onclick="Slide(); play()">
                                     <div id="button-inside"></div>
                                 </div>
                             </audio>
-                        </p>
+                        </p> -->
 
 
                     </div>
-                    <div class="sous-titre1" id="randonnee">Randonnée</div>
-                    <p>13 sentiers sont disponibles pour vous dégourdir les jambes. De niveau débutant à difficile, vous
-                        serez en mesure de vous évader pour quelques heures!</p>
+
 
 
 
@@ -150,9 +161,17 @@
                 <div class="tableau1">
                     <table>
                         <tr>
+                            <td colspan="3">
+                                <div class="sous-titre1" id="randonnee">Randonnée</div>
+                                <p>13 sentiers sont disponibles pour vous dégourdir les jambes. De niveau débutant à
+                                    difficile, vous
+                                    serez en mesure de vous évader pour quelques heures!</p>
+                            </td>
+                            <td rowspan="5" class="derniere-colonne"></td>
+                        </tr>
+                        <tr>
                             <td colspan="2">Niveaux</td>
                             <td>Sentiers</td>
-                            <td rowspan="4" class="derniere-colonne"></td>
                         </tr>
                         <tr>
                             <td>
