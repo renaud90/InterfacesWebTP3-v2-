@@ -9,7 +9,7 @@ h4{
 
 iframe{
     position: relative;
-    height: 100%;
+    height: 80%;
     width: 100%;
 
 }
@@ -77,6 +77,70 @@ iframe{
     background-image: url("../images/Photos/Bic.jpg");
     filter: grayscale(20%);
 }
+@media screen and (max-width:599px){
+    .services-offerts-image{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 100%;
+        padding: 50px 0px 0px 0px;
+    }
+    .services-offerts-image a{
+        margin-bottom:10px;
+    }
+
+    .services-offerts{
+        grid-template-columns: 100%;
+    }
+    .audio-commentaires{
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "texte bouton"
+        "citation citation";
+    }
+    .derniere-colonne, .niveau-img{
+        display: none;
+    }
+}
+@media screen and (min-width:600px) and (max-width:900px){
+    .services-offerts-image{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        width: 100%;
+        padding: 50px 0px 0px 0px;
+    }
+    .services-offerts-image a{
+        margin-bottom:10px;
+    }
+
+    .services-offerts{
+        grid-template-columns: 50% 50%;
+    }
+    .audio-commentaires{
+        grid-template-columns: 25% 75%;
+        grid-template-areas:
+        "texte citation"
+        "bouton citation";
+    }
+}
+@media screen and (min-width:901px){
+
+    .services-offerts-image{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        width: 100%;
+        padding: 150px 0px 0px 0px;
+    }
+
+    .services-offerts{
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .audio-commentaires{
+        grid-template-columns: 25% 75%;
+        grid-template-areas:
+        "texte citation"
+        "bouton citation";
+    }
+}
 
 .content-photo-title-page{
     color:white;
@@ -86,28 +150,20 @@ iframe{
 
 }
 
-.services-offerts-image{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    width: 100%;
-    padding: 150px 0px 0px 0px;
-}
-
 .services-offerts-image img{
     filter: invert(100%) opacity(50%) brightness(150%);
     border: 1px groove black;
 }
 
-
-
 .services-offerts{
     display: grid;
     width: 92%;
-    grid-template-columns: 25% 25% 25% 25%;
     grid-column-gap: 30px;
     text-align: justify;
     margin-bottom: 20px;
 }
+
+
 
 .button{
     display: grid;
@@ -119,20 +175,15 @@ iframe{
 
 .audio-commentaires{
     display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-areas:
-    "texte citation"
-    "bouton citation";
     margin-bottom: 30px;
+    margin-top:30px;
 }
 
 .texte-boutton{
-    display: grid;
     grid-area: texte;
 }
 
 .bouton{
-    display: grid;
     grid-area: bouton;
 }
 
@@ -227,7 +278,7 @@ td{
 .citation{
     width: 92%;
     position: relative;
-    margin-top: 50px;
+    margin-top: auto;
     color: rgb(0, 53, 0);
     background-color: rgba(50, 50, 50, 0.1);
     padding: 20px;

@@ -1,19 +1,8 @@
 /*Styles appliqué uniquement à la page d'acceuil pour la disposition des images*/
-@keyframes visible{
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
 
 .grid-wrapper a {
     display: bloc;
 }
-
-.content{
-    animation-name: visible;
-    animation-duration:1s;
-    animation-iteration-count: 1;
-}
-
 
 .grid-wrapper{
     display:grid;
@@ -45,7 +34,6 @@
 
 .content-photo{
     position:relative;
-    border:5px ridge grey;
 }
 
 #content-photo-1{
