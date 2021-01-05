@@ -14,7 +14,7 @@ iframe{
 
 }
 
-.castor{
+/* .castor{
     height: 375px;
     display: block;
     padding: 0px;
@@ -35,7 +35,7 @@ iframe{
     width: 800px;
     background: linear-gradient(to right, #332208, black);
     padding: 0px;
-}
+} */
 
 .sous-titre{
     font-weight: bold;
@@ -65,12 +65,17 @@ iframe{
 
 .page-titre-photo2{
     background-image: url("../images/Photos/Vallee-fantomes.jpg");
-    filter: grayscale(5%);
+    filter: grayscale(30%);
 }
 
 .page-titre-photo3{
     background-image: url("../images/Photos/Mont-Megantic.jpg");
     filter: grayscale(40%);
+}
+
+.page-titre-photo4{
+    background-image: url("../images/Photos/Bic.jpg");
+    filter: grayscale(20%);
 }
 
 .content-photo-title-page{
@@ -101,7 +106,41 @@ iframe{
     grid-template-columns: 25% 25% 25% 25%;
     grid-column-gap: 30px;
     text-align: justify;
+    margin-bottom: 20px;
 }
+
+.button{
+    display: grid;
+    grid-template-columns: 100%;
+    width: auto;
+
+
+}
+
+.audio-commentaires{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas:
+    "texte citation"
+    "bouton citation";
+    margin-bottom: 30px;
+}
+
+.texte-boutton{
+    display: grid;
+    grid-area: texte;
+}
+
+.bouton{
+    display: grid;
+    grid-area: bouton;
+}
+
+.citation{
+    grid-area: citation;
+}
+
+
 
 table{
     width: 100%;
@@ -109,23 +148,34 @@ table{
 
 .tableau1{
     border: 5px solid transparent;
-    border-image: url(../images/feuille_bordure.png) 30 round;
+    border-image: url("../images/feuille_bordure.png") 30 round;
 }
 
 .tableau2{
     border: 5px solid transparent;
-    border-image: url(../images/Photos/Vallee-fantomes.jpg) 30 round;
+    border-image: url("../images/Photos/Vallee-fantomes.jpg") 30 round;
 }
 
 .tableau3{
     border: 5px solid transparent;
-    border-image: url(../images/ciel-nuit.jpg) 30 stretch;
+    border-image: url("../images/ciel-nuit.jpg") 30 stretch;
+}
+
+.tableau4{
+    border: 5px solid transparent;
+    border-image: url("../images/vague.jpeg") 30 stretch;
+    filter: grayscale(50%);
 }
 
 table img{
     width: 100px;
     height: 100px;
     margin: auto;
+}
+
+table tr td p{
+    font-weight: normal;
+    font-size: 0.75em;
 }
 
 table td ol > li{
@@ -144,6 +194,8 @@ table ul li:last-child{
     list-style-image: url(../images/duree.png);
     list-style-type: square;
     margin-left: 0px;
+    margin-bottom: 1.2em;
+    
 
 }
 
@@ -158,11 +210,44 @@ td{
     border-bottom: 2px solid darkgray;
 }
 
-
-
-
-table tr td:nth-child(2){
+.header-tableau{
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
+
+.derniere-colonne{
+    width: 20%;
+    background-image: url("../images/background-test.jpg");
+    background-repeat: repeat;
+    filter: brightness(95%);
+}
+
+
+/* Citation du bas de page */
+.citation{
+    width: 92%;
+    position: relative;
+    margin-top: 50px;
+    color: rgb(0, 53, 0);
+    background-color: rgba(50, 50, 50, 0.1);
+    padding: 20px;
+}
+
+blockquote{
+    font-size: 1.5em;
+}
+
+.personne{
+    text-align: right;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
 
