@@ -157,6 +157,10 @@ a{
         transition:margin-top 0.6s linear;
     }
 
+    .current-link{
+        text-shadow: none;
+    }
+
     .menu-visible{
         margin-top: 0px;
         transition:margin-top 0.6s linear;

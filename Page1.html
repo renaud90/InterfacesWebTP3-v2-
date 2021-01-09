@@ -88,51 +88,54 @@
 
 
                     <div class="services-offerts">
+                        <div class="service1">
+                            <h4 id="roulotte">Prêt à camper</h4>
+                            <p>
+                                Le Parc National de la Jacques-Cartier offre différentes options qui sauront satisfaire les
+                                campeurs
+                                débutant autant que les plus aguérris. Nos chalets vous offriront une expérience sans tracas
+                                avec
+                                leur cuisines fournies et leur réfrigérateur. Même pas besoin de trimballer votre matelas
+                                puisque
+                                les nôtres sont compris dans la location. Ils sont parfaits pour une fin de semaine
+                                d'évasion
+                                romantique en pleine nature!
+                            </p>
+                        </div>
 
-                        <h4 id="roulotte">Prêt à camper</h4>
-                        <h4 id="camping">Camping sauvage</h4>
-                        <h4 id="animaux">Observation de la faune</h4>
-                        <h4>Localisation</h4>
+                        <div class="service2">
+                            <h4 id="camping">Camping sauvage</h4>
+                            <p>
+                                Pour les visiteurs à la recherche d'expérience plus en nature, nos terrains de camping vous
+                                offriront
+                                intimité et confort. Chaque site est équippé d'un foyer extérieur, d'une table à
+                                pique-nique. Vous
+                                souhaitez garder contact avec la civilisation? Certains sites vous donnent accès à
+                                l'électricité.
+                                Renseignez-vous auprès de nos commis!
+                            </p>
+                        </div>
 
-
-
-                        <p>
-                            Le Parc National de la Jacques-Cartier offre différentes options qui sauront satisfaire les
-                            campeurs
-                            débutant autant que les plus aguérris. Nos chalets vous offriront une expérience sans tracas
-                            avec
-                            leur cuisines fournies et leur réfrigérateur. Même pas besoin de trimballer votre matelas
-                            puisque
-                            les nôtres sont compris dans la location. Ils sont parfaits pour une fin de semaine
-                            d'évasion
-                            romantique en pleine nature!
-                        </p>
-
-                        <p>
-                            Pour les visiteurs à la recherche d'expérience plus en nature, nos terrains de camping vous
-                            offriront
-                            intimité et confort. Chaque site est équippé d'un foyer extérieur, d'une table à
-                            pique-nique. Vous
-                            souhaitez garder contact avec la civilisation? Certains sites vous donnent accès à
-                            l'électricité.
-                            Renseignez-vous auprès de nos commis!
-                        </p>
-
-                        <p>
-                            Que ce soit sur nos sentiers ou à l'un de nos nombreux observatoires, venez admirer la faune
-                            et
-                            la flore du Parc National de la Jacques-Cartier. Avec une simple paire de jumelles, vous
-                            serez
-                            estomaqués par la diversité de notre flore. Bien plus que des sapins et des épinettes, vous
-                            y
-                            retrouverez nombre d'espèces que vous ne retrouverez nulle part ailleurs.
-                        </p>
-
-                        <iframe
+                        <div class="service3">
+                            <h4 id="animaux">Observation de la faune</h4>
+                            <p>
+                                Que ce soit sur nos sentiers ou à l'un de nos nombreux observatoires, venez admirer la faune
+                                et
+                                la flore du Parc National de la Jacques-Cartier. Avec une simple paire de jumelles, vous
+                                serez
+                                estomaqués par la diversité de notre flore. Bien plus que des sapins et des épinettes, vous
+                                y
+                                retrouverez nombre d'espèces que vous ne retrouverez nulle part ailleurs.
+                            </p>
+                        </div>
+                        
+                        <div class="service4">
+                            <h4>Localisation</h4>
+                            <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d348403.8389527754!2d-71.5621823!3d46.9832007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc0a9364e153c8d%3A0x7d0ec7822e4ea4d6!2sParc%20national%20de%20la%20Jacques-Cartier!5e0!3m2!1sfr!2sca!4v1608070552155!5m2!1sfr!2sca"
                             style="border: 1px dashed black;" allowfullscreen="" aria-hidden="false"
                             tabindex="0"></iframe>
-
+                        </div>
                     </div>
 
 
@@ -141,11 +144,10 @@
                             <p> Pour entendre ce parc</p>
                         </div>
                         <div class="bouton">
-                             <audio id="audio" src="assets\audio\foret1.mp3">
-                                <div id="button-outside" onclick="Slide(); play()">
-                                    <div id="button-inside"></div>
-                                </div>
-                            </audio>
+                            <audio id="audio" src="assets\audio\foret1.mp3"></audio>
+                            <div id="button-outside" onclick="Slide(); play()">
+                                <div id="button-inside"></div>
+                            </div>
                         </div>
 
                         <div class="citation">
@@ -183,7 +185,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <img src="assets/images/niveau_facile.png" alt="Niveau débutant"
+                                <img  class="niveau-img" src="assets/images/niveau_facile.png" alt="Niveau débutant"
                                     title="Niveau débutant">
                             </td>
                             <td>
@@ -221,7 +223,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <img src="assets/images/niveau_moyen.png" alt="Niveau moyen" title="Niveau moyen">
+                                <img class="niveau-img" src="assets/images/niveau_moyen.png" alt="Niveau moyen" title="Niveau moyen">
                             </td>
                             <td>Moyen</td>
                             <td>
@@ -256,7 +258,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <img src="assets/images/niveau_difficile.png" alt="Niveau avancé" title="Niveau avancé">
+                                <img class="niveau-img" src="assets/images/niveau_difficile.png" alt="Niveau avancé" title="Niveau avancé">
                             </td>
                             <td>Avancé</td>
                             <td>
