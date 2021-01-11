@@ -7,6 +7,7 @@ body{
     flex-direction: column;
 }
 
+/* Disposition de l'organisation de la page avec la taille d'écran */
 @media screen and (max-width:599px){
     .content{
         margin-top: 100px;
@@ -41,6 +42,7 @@ body{
     }
 }
 
+/* Animation sur toutes les pages au chargement de la page*/
 @keyframes visible{
     from {opacity: 0;}
     to {opacity: 1;}

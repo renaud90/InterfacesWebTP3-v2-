@@ -62,6 +62,11 @@ iframe {
     padding: 225px 0px 150px 0px;
 }
 
+.services-offerts-image {
+    display: grid;
+    width:100%
+}
+
 .services-offerts-image img {
     filter: invert(100%) opacity(50%) brightness(150%);
     border: 1px groove black;
@@ -73,9 +78,7 @@ iframe {
 
 @media screen and (max-width:599px) {
     .services-offerts-image {
-        display: grid;
         grid-template-columns: 50% 50%;
-        width: 100%;
         padding: 50px 0px 0px 0px;
     }
     .services-offerts-image a {
@@ -99,9 +102,7 @@ iframe {
 
 @media screen and (min-width:600px) and (max-width:900px) {
     .services-offerts-image {
-        display: grid;
         grid-template-columns: 33% 33% 33%;
-        width: 100%;
         padding: 50px 0px 0px 0px;
     }
     .services-offerts-image a {
@@ -118,9 +119,7 @@ iframe {
 
 @media screen and (min-width:901px) {
     .services-offerts-image {
-        display: grid;
         grid-template-columns: 25% 25% 25% 25%;
-        width: 100%;
         padding: 150px 0px 0px 0px;
     }
     .services-offerts {

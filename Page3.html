@@ -132,8 +132,8 @@
                         </div>
                         <div class="bouton">
                             <audio id="audio" src="assets\audio\foret1.mp3"></audio>
-                            <div id="button-outside" onclick="Slide(); play()">
-                                <div id="button-inside"></div>
+                            <div class="button-outside" onclick="Slide(); Play()">
+                                <div class="button-inside"></div>
                             </div>
                         </div>
                         <div class="citation">
@@ -294,7 +294,7 @@
                 var element = document.getElementById('dropdown-menu');
                 element.classList.toggle('menu-visible');
             }
-            function play() {
+            function Play() {
                 var audio = document.getElementById("audio");
                 if (audio.paused) {
                     audio.play();
@@ -304,8 +304,8 @@
                 }
             }
             function Slide() {
-                document.getElementById('button-outside').classList.toggle('button-outside-clicked');
-                document.getElementById('button-inside').classList.toggle('button-inside-clicked');
+                document.getElementsByClassName('button-outside')[0].classList.toggle('button-outside-clicked');
+                document.getElementsByClassName('button-inside')[0].classList.toggle('button-inside-clicked');
             }
 
         </script>

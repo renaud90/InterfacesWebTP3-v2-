@@ -1,4 +1,4 @@
-#button-outside{
+.button-outside{
     width:95px;
     height:40px;
     border-radius:20px;
@@ -6,7 +6,7 @@
     border: 2px solid grey;
 }
 
-#button-inside{
+.button-inside{
     width:38px;
     height:38px;
     margin: 1px;
@@ -17,10 +17,10 @@
 }
 
 .button-outside-clicked{
-    background-color: lightblue !important;
+    background-color: lightblue;
 }
 
 .button-inside-clicked{
-    margin-left: 56px !important;
+    margin-left: 56px;
     transition: margin-left 1s;
 }
