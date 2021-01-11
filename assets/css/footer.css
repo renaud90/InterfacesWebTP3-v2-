@@ -4,12 +4,18 @@ footer{
     background-color: rgb(50,50,50);
     color:white;
     font-size: 0.8em;
+    height: 75px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 footer a{
     color: green;
     text-decoration: underline;
 }
+
+
+/* Ajustement du footer en fonction du format d'ecran */
 
 @media screen and (min-width: 901px){
     footer{

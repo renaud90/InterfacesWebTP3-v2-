@@ -1,161 +1,142 @@
-h4 + img{
+/*Image du haut du site avec les icones */
+
+h4+img {
     height: 60px;
     width: 60px;
 }
 
-h4{
+h4 {
     text-align: center;
 }
 
-iframe{
+iframe {
     position: relative;
     height: 80%;
     width: 100%;
-
 }
 
-/* .castor{
-    height: 375px;
-    display: block;
-    padding: 0px;
-}
-
-.castorimage{
-    display: inline-block;
-    height: 375px;
-    width: 1880px;
-    background: linear-gradient(to right, transparent, #332208 53%, black 90%),
-    url("Images/Photos/castor1.png"), no-repeat;
-    padding: 0px;
-}
-
-.castorcarre{
-    display: inline-block;
-    height: 375px;
-    width: 800px;
-    background: linear-gradient(to right, #332208, black);
-    padding: 0px;
-} */
-
-.sous-titre{
+.sous-titre {
     font-weight: bold;
 }
 
-.sous-titre1{
+.sous-titre1 {
     font-weight: bold;
 }
 
-.texte-image-titre{
+.texte-image-titre {
     font-size: 0.5em;
     padding: 100px 20px 0px 20px;
-
 }
 
-.page-titre{
+.page-titre {
     text-align: center;
     background-size: cover;
     border: 0px;
     font-size: 3em;
 }
 
-.page-titre-photo1{
+.page-titre-photo1 {
     background-image: url("../images/Photos/Les_loups1.jpg");
     filter: grayscale(40%);
 }
 
-.page-titre-photo2{
+.page-titre-photo2 {
     background-image: url("../images/Photos/Vallee-fantomes.jpg");
     filter: grayscale(30%);
 }
 
-.page-titre-photo3{
+.page-titre-photo3 {
     background-image: url("../images/Photos/Mont-Megantic.jpg");
     filter: grayscale(40%);
 }
 
-.page-titre-photo4{
+.page-titre-photo4 {
     background-image: url("../images/Photos/Bic.jpg");
     filter: grayscale(20%);
 }
-@media screen and (max-width:599px){
-    .services-offerts-image{
+
+.content-photo-title-page {
+    color: white;
+    width: 100%;
+    top: 50%;
+    padding: 225px 0px 150px 0px;
+}
+
+.services-offerts-image img {
+    filter: invert(100%) opacity(50%) brightness(150%);
+    border: 1px groove black;
+}
+
+
+
+/* Modifications de l'affichage en fonction du format d'ecran */
+
+@media screen and (max-width:599px) {
+    .services-offerts-image {
         display: grid;
         grid-template-columns: 50% 50%;
         width: 100%;
         padding: 50px 0px 0px 0px;
     }
-    .services-offerts-image a{
-        margin-bottom:10px;
+    .services-offerts-image a {
+        margin-bottom: 10px;
     }
-
-    .services-offerts{
+    .services-offerts {
         grid-template-columns: 100%;
+        width: 100% !important;
     }
-    .audio-commentaires{
+    .audio-commentaires {
         grid-template-columns: 50% 50%;
-        grid-template-areas:
-        "texte bouton"
-        "citation citation";
+        grid-template-areas: "texte bouton" "citation citation";
     }
-    .derniere-colonne, .niveau-img{
+    .derniere-colonne, .niveau-img {
         display: none;
     }
+    table tr td:last-child {
+        border-left: 2px solid darkgray;
+    }
 }
-@media screen and (min-width:600px) and (max-width:900px){
-    .services-offerts-image{
+
+@media screen and (min-width:600px) and (max-width:900px) {
+    .services-offerts-image {
         display: grid;
         grid-template-columns: 33% 33% 33%;
         width: 100%;
         padding: 50px 0px 0px 0px;
     }
-    .services-offerts-image a{
-        margin-bottom:10px;
+    .services-offerts-image a {
+        margin-bottom: 10px;
     }
-
-    .services-offerts{
+    .services-offerts {
         grid-template-columns: 50% 50%;
     }
-    .audio-commentaires{
+    .audio-commentaires {
         grid-template-columns: 25% 75%;
-        grid-template-areas:
-        "texte citation"
-        "bouton citation";
+        grid-template-areas: "texte citation" "bouton citation";
     }
 }
-@media screen and (min-width:901px){
 
-    .services-offerts-image{
+@media screen and (min-width:901px) {
+    .services-offerts-image {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         width: 100%;
         padding: 150px 0px 0px 0px;
     }
-
-    .services-offerts{
+    .services-offerts {
         grid-template-columns: 25% 25% 25% 25%;
     }
-    .audio-commentaires{
+    .audio-commentaires {
         grid-template-columns: 25% 75%;
-        grid-template-areas:
-        "texte citation"
-        "bouton citation";
+        grid-template-areas: "texte citation" "bouton citation";
     }
 }
 
-.content-photo-title-page{
-    color:white;
-    width: 100%;
-    top: 50%;
-    padding: 225px 0px 150px 0px;
 
-}
 
-.services-offerts-image img{
-    filter: invert(100%) opacity(50%) brightness(150%);
-    border: 1px groove black;
-}
+/* Grille des services offerts incluant la carte du site */
 
-.services-offerts{
+.services-offerts {
     display: grid;
     width: 92%;
     grid-column-gap: 30px;
@@ -165,117 +146,114 @@ iframe{
 
 
 
-.button{
+/* Affichage du bouton */
+
+.button {
     display: grid;
     grid-template-columns: 100%;
     width: auto;
-
-
 }
 
-.audio-commentaires{
+.audio-commentaires {
     display: grid;
     margin-bottom: 30px;
-    margin-top:30px;
+    margin-top: 30px;
 }
 
-.texte-boutton{
+.texte-bouton {
     grid-area: texte;
+    padding: 20px 10px 0px 0px;
 }
 
-.bouton{
+.bouton {
     grid-area: bouton;
-}
-
-.citation{
-    grid-area: citation;
+    margin: 40px 0px 0px 50px;
 }
 
 
 
-table{
+/*Affichage du tableau contenant l'information sur les sentiers */
+
+table {
     width: 100%;
 }
 
-.tableau1{
+.tableau1 {
     border: 5px solid transparent;
     border-image: url("../images/feuille_bordure.png") 30 round;
 }
 
-.tableau2{
+.tableau2 {
     border: 5px solid transparent;
     border-image: url("../images/Photos/Vallee-fantomes.jpg") 30 round;
 }
 
-.tableau3{
+.tableau3 {
     border: 5px solid transparent;
     border-image: url("../images/ciel-nuit.jpg") 30 stretch;
 }
 
-.tableau4{
+.tableau4 {
     border: 5px solid transparent;
     border-image: url("../images/vague.jpeg") 30 stretch;
     filter: grayscale(50%);
 }
 
-table img{
+table img {
     width: 100px;
     height: 100px;
     margin: auto;
 }
 
-table tr td p{
+table tr td p {
     font-weight: normal;
     font-size: 0.75em;
 }
 
-table td ol > li{
+table td ol>li {
     font-weight: bold;
 }
 
-table tr:first-child{
+table tr:first-child {
     font-weight: bold;
     font-size: 1.5em;
     margin: 20px;
 }
 
-
-table ul li:last-child{
+table ul li:last-child {
     list-style: none;
     list-style-image: url(../images/duree.png);
     list-style-type: square;
     margin-left: 0px;
     margin-bottom: 1.2em;
-    
-
 }
 
-table ul li:first-child{
+table ul li:first-child {
     list-style: none;
     list-style-image: url(../images/distance.png);
     list-style-type: square;
     margin-left: 0px;
 }
 
-td{
+td {
     border-bottom: 2px solid darkgray;
 }
 
-.header-tableau{
+.header-tableau {
     font-weight: bold;
     font-size: 1.3em;
 }
 
-.derniere-colonne{
+.derniere-colonne {
     width: 20%;
     background-image: url("../images/background-test.jpg");
     background-repeat: repeat;
     filter: brightness(95%);
 }
 
+/* Citation de la page */
 
-/* Citation du bas de page */
-.citation{
+.citation {
     width: 92%;
     position: relative;
     margin-top: auto;
@@ -284,21 +262,15 @@ td{
     padding: 20px;
 }
 
-blockquote{
+blockquote {
     font-size: 1.5em;
 }
 
-.personne{
+.personne {
     text-align: right;
     color: black;
 }
 
-
-
-
-
-
-
-
-
-
+.citation {
+    grid-area: citation;
+}
